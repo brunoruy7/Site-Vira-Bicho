@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="style.css" rel="stylesheet">
+    <script src="form.JS" defer></script>
     <title>Vira Bicho</title>
 </head>
 <body>
@@ -19,8 +20,9 @@
             <tr><td><img id="foto" src="foto03.jpeg"></td><td><img id="foto" src="foto04.jpeg"></td></tr>
         </table>
         <form><h3>Sua opinião é muito importante para nós!</h3>
-            <br><h5>Deixe-nos sua sujestão, críticas, dúvidas ou comentário abaixo!</h5><p>Nome: <input required type="text" id="nome"></p>
-        <p>Comentário: <textarea id="comentario"></textarea><input type="button" value="enviar"></p>
+            <br><h5>Deixe-nos sua sujestão, críticas, dúvidas ou comentário abaixo!</h5>
+            <p>Nome: <input required type="text" id="nome"></p>
+        <p>Comentário: <textarea id="comentario"></textarea><input type="button" onclick="envio()" value="enviar"></p>
         <textarea readonly id="area"></textarea></form>
         
     </section>
