@@ -1,9 +1,8 @@
-let nome = document.getElementById("nome")
-let comentario = document.getElementById("comentario")
-let area= document.getElementById("area")
-function envi(){
-document.getElementById("area").innerHTML  += "\n" + nome.value : + comentario.value;
-}
-function envio() {
-    alert("Hello! I am an alert box!");
-  }
+function envio(){
+ nome = document.getElementById("nome")
+ comentario = document.getElementById("comentario")
+ area= document.getElementById("area")
+ if (nome.value == "Admin")
+ {alert ("Esse nome está reservado para o administrador possa responder perguntas sem confusão"); retur = false;}
+ else {document.getElementById("area").innerHTML  += "\n " + nome.value + ":" + comentario.value + "\n"; 
+}}
