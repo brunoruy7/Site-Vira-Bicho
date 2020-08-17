@@ -2,7 +2,7 @@ body {
 	background-color: #00ffffaa;
 	text-align: center;
 	/*A problema em definir o caminho*/
-	background-image: /*url("file:///home/jorge/Documentos/ajudando/brunoRuby/Site-Vira-Bicho/images/Fundo.jpg")*/ ;
+	background-image: images/Fundo.jpg;
 	background-repeat: no-repeat;
   background-size: cover;
 }
