@@ -1,35 +1,52 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="Style.css" rel="stylesheet">
-    <script src="form.JS" defer></script>
-    <title>Vira Bicho</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="./styles/style.css" rel="stylesheet">
+		<script src="./js/form.js" ></script>
+		<title>Vira Bicho</title>
 </head>
 <body>
-    <header>
-        <h1>Vira Bicho</h1>
-        
-    </header>
-    <section>
-        <h2>Banho em seu pet no conforto de sua casa</h2>
-            <p>Banho e tosa a domicílio, além de passeio com o seu cão por um preço acessível.</p>
-        <table>
-            <tr><td><img id="foto" src="Foto01.jpeg"></td><td><img id="foto" src="Foto02.jpeg"></td></tr>
-            <tr><td><img id="foto" src="Foto03.jpeg"></td><td><img id="foto" src="Foto04.jpeg"></td></tr>
-        </table>
-        <form><h3>Sua opinião é muito importante para nós!</h3>
-            <br><h5>Deixe-nos sua sujestão, críticas, dúvidas ou comentário abaixo!</h5>
-            <p>Nome: <input required type="text" id="nome"></p>
-        <p>Comentário: <textarea id="comentario"></textarea><input type="button" onclick="envio()" value="enviar"></p>
-        <textarea readonly id="area"></textarea></form>
-        
-    </section>
-    <footer>
-        <p> Rua Capitão Messias Ribeiro, 220 centro Lorena-SP TEL +55 (12) 99115-3910</p>
-    </footer>
-    
+		<header>
+				<h1>Vira Bicho</h1>
+		</header>
+		<section>
+				<h2>Banho em seu pet no conforto de sua casa</h2>
+				<p>Banho e tosa a domicílio, além de passeio com o seu cão por um preço acessível.</p>
+				<table>
+					<tr>
+						<td><img class="foto" src="./images/Foto01.jpeg" alt=''></td>
+						<td><img class="foto" src="./images/Foto02.jpeg" alt=''></td>
+					</tr>
+					<tr>
+						<td><img class="foto" src="./images/Foto03.jpeg" alt=''></td>
+						<td><img class="foto" src="./images/Foto04.jpeg" alt=''></td>
+					</tr>
+				</table>
+				<form onsubmit="salvando()">
+					<h3>Sua opinião é muito importante para nós!</h3>
+					<h5>Deixe-nos sua sujestão, críticas, dúvidas ou comentário abaixo!</h5>
+					<p>
+						<label>Nome:</label> 
+						<input  type="text" name="nome" required>
+					</p>
+					<p>
+						<label>Comentário:</label>
+						<textarea class="comentario" name="comentario"></textarea>
+						<!-- <input type="button" onclick="envio()" value="enviar"></p> -->
+						<!-- <textarea readonly id="area"></textarea>-->
+					</p>
+					<button type="submit">Comentar</button>
+				</form>
+					<ul id="lista-comentarios">
+					
+					</ul>
+		</section>
+		<footer>
+				<p> Rua Capitão Messias Ribeiro, 220 centro Lorena-SP TEL +55 (12) 99115-3910</p>
+		</footer>
+		
 </body>
 </html>
 
