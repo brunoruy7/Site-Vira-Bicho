@@ -11,9 +11,10 @@ function salvando(){
  event.preventDefault();
 
  let nome = document.querySelector("input[name='nome']").value;
- let comentario = document.querySelector("textarea[name='comentario']").value;
+ let coment = document.querySelector("textarea[name='comentario']").value;
+ let comentario = nome + ':' + coment
  
- if(nome != "Admin"){
+ if(nome == "Admin"){
  	alert ("Esse nome está reservado para o administrador para que possa responder perguntas sem confusão");
  }else{
  	adicionandoComentario(comentario);
