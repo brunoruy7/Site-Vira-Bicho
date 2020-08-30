@@ -7,9 +7,24 @@
     <link href="./styles/style.css" rel="stylesheet">
 </head>
 <body>
+    <header><a href="index.html">Home</a><a href="agendamento.html">Agendar</a></header>
     <form>
     <table><tr><td colspan="4"><img src="images/logo01.jpg"></td></tr>
-    <tr><td>Nome do Pet:</td><td>Raça:</td><td>Idade:</td><td>Espécie: </td></tr></table>
+    <tr><td><h5>Nome do Pet: <input type="text" maxlength="20"></h5></td><td><h5>Raça: <input type="text" maxlength="20"></h5></td><td><h5>Idade: <input type="number" maxlength="5">Anos</h5></td></td><td><h5>Espécie:<br><input type="radio" name="especie" value="C">Canino   <input type="radio" name="especie" value="G">Felino</h5> </td></tr>
+    <tr><td colspan ='4' ><input type="radio" name="gen" value="Macho">Macho   <input type="radio" name="gen" value="Fêm">Fêmea   <input type="checkbox" value="alérgico">  alérgico   <input type="checkbox" value="hora marcada">Hora Marcada   <input type="checkbox" value="encaixe">Encaixe   <input type="checkbox" value="pacote">Pacote   <input type="checkbox" value="taxidog">Taxi dog</td></tr>
+    <tr><td colspan="4"><h5>Objetos entregues com o animal: </h5><br><input type="checkbox" value="Coleira">Coleira   <input type="checkbox" value="Guia">Guia   <input type="checkbox" value="Enforcador">Enforcador   <input type="checkbox" value="Retrátil">Retrátil   <input type="checkbox" value="Peitoral">Peitoral   <input type="checkbox" value="EsovaDdentes">Escova de dente   <input type="checkbox" value="PastaDdente">Pasta de dente</td></tr>
+    <tr><td colspan="4"><h5>Observações</h5><input type="text" maxlength="50"></td></tr>
+    <tr><td colspan="2"><h5>Nome do tutor(a):</h5><input type="text" maxlength="20"></td><td colspan="2"><h5>Telefone:</h5><input type="tel"></td></tr>
+    <tr><td colspan="4"><h5>Endereço</h5><input type="text" maxlength="100"></td></tr>
+    <tr><td colspan="4"><h4>Serviços solicitados:</h4><br><input type="checkbox" value="banho">Banho R$<input id ="pricebanho" type="number" readonly value="00,00"> <input type="checkbox" value="Desembolo">Desembolo R$<input type="number" id="pricedesembolo" readonly value="00,00">   <input type="checkbox" value="escovardente">Escovar Dentes R$<input type="number" id="priceescovadente" readonly value="00,00"> <br><input type="checkbox" value="Hidratar">Hidratação R$<input type="number" id="pricehira" readonly value="00,00">    <input type="checkbox" value="Linhas">Linhas R$<input type="number" id="pricelinhas" readonly value="00,00"></td></tr>
+    <tr><td colspan="4"><input type="checkbox" value="tosa">Tosa R$<input type="number" readonly value="00,00" id="pricetosa">   <input type="checkbox" value="tosahig">tosa higienica R$<input type="number" readonly value="00,00" id="pricetosahig">   <input type="checkbox" value="tosac/maq">Tosa com máquina R$<input type="number" id="pricetosamaq" readonly value="00,00">   <input type="checkbox" value="Tosac/tes">Tosa com tesoura R$<input type="number" readonly value="00,00" id="pricetosates"><br><input type="checkbox" value="Tosapad">Tosa padrão R$<input type="number" id="pricetosapad" readonly value="00,00">   Comprimento/altura dos pelos: <input type="number">cm</td></tr>
+    <tr><td colspan="4"><fieldset><h5>Pós banho:</h5><br>Adereços/acessórios?   <input type="radio" value="ad/acS">sim   <input type="radio" value="Ad/acN">Não   Loção/Perfume?   <input type="radio" value="loc/perS">Sim   <input type="radio" value="loc/perN">Não</fieldset><h3>Total Serviços R$<input type="number" readonly></h3></td></tr>
+    <tr><td colspan="4" ><h3>Análise visual do animal</h3><br><div><input type="checkbox" value="pulga">Pulgas/Carrapatos<br><input type="checkbox" value="verruga">Verrugas<br><input type="checkbox" value="secreção">Secreções genitais<br><input type="checkbox" value="olhos">Olhos<br><input type="checkbox" value="Ouvidos">Ouvidos<br><input type="checkbox" value="pele">Pele<br></div>
+    <div><fieldset>Doença pré existente: <input type="text" maxlength="20"> </fieldset><br><fieldset>Doença canal auditivo: <input type="text" maxlength="20"></fieldset><br><fieldset>Doença de pele:  <input type="text" maxlength="20"></fieldset></div></td></tr>
+    <tr><td colspan="4"><table><tr><td rowspan="2">Observações adicionais<br> <input type="text" maxlength="200"></td><td>Profissional <input type="text" maxlength="20"></td></tr><tr><td>Data<input type="date"></td></tr></table><br>
+    <p>DECLARO ESTAR CIENTE DAS POSSÍVEIS ANORMALIDADES E TER RECEBIDO O ANIMAL EM PERFEITO ESTADO BEM COMO OS SERVIÇOS REALIZADOS DE ACORDO COM O SOLICITADO.
+        Autorizo registro fotográfico("antes" e "depois") para efeitos de documentação e divulgação em books, redes sociais ou qualquer materil publicitário.</p>
+    Cliente:<input type="text" maxlength="20">   Data e Horário<input type="datetime-local"></td></tr></table>
 </form>
 </body>
 </html>
